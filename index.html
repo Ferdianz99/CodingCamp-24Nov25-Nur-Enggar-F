@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list - Nur Enggar F</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+    <header>
+        <h1 class="text-2xl font-bold">My Todo List</h1>
+    </header>
+
+    <main>
+        <section>
+            <form action="">
+        <input type="text" class="border p-2 rounded" id="todo-input" placeholder="Enter a new todo"> 
+        <input type="date" class="border p-2 rounded" id="todo-date" placeholder="enter due date">
+    </form>
+    <button class="border p-2 bg-green-500 text-white" onclick="validateform();" type="button">add todo</button>
+        </section>
+        <section class="flex pt-2 jusstify-between">
+            <button class="border rounded p-2 bg-red-500 text-white">Clear All Todos</button>
+            <button class="border rounded p-2 bg-blue-500 text-white">Filter Todos</button>
+        </section>
+        <section class="py-2">
+            <header>
+                <h1 class="text-2xl font-semibold"> List of Todos</h1>
+            </header>
+            <ul class="pt-2" id="todo-list">
+                <li>No todos available</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Nur Enggar F. All right reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
